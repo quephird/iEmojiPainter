@@ -14,9 +14,9 @@ struct GridStack<Content: View>: View {
 
     var body: some View {
         VStack {
-            ForEach(0..<13) { row in
+            ForEach(0..<rows) { row in
                 HStack() {
-                    ForEach(0..<10) { column in
+                    ForEach(0..<columns) { column in
                         cellContent(column, row)
                     }
                 }

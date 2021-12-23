@@ -15,7 +15,7 @@ struct ContentView: View {
             LinearGradient(colors: [.indigo, .mint], startPoint: .top, endPoint: .bottom)
 
             GridStack(rows: 13, columns: 10) { column, row in
-                PixelButton(defaultColor: .white)
+                Pixel()
             }
         }
         .ignoresSafeArea()

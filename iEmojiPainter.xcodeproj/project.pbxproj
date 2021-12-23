@@ -12,7 +12,7 @@
 		87428FEF27751E12009ED611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87428FEE27751E12009ED611 /* Assets.xcassets */; };
 		87428FF227751E12009ED611 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87428FF127751E12009ED611 /* Preview Assets.xcassets */; };
 		87428FF927752384009ED611 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87428FF827752384009ED611 /* GridStack.swift */; };
-		87428FFB277526C8009ED611 /* PixelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87428FFA277526C8009ED611 /* PixelButton.swift */; };
+		87428FFB277526C8009ED611 /* Pixel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87428FFA277526C8009ED611 /* Pixel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		87428FEE27751E12009ED611 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87428FF127751E12009ED611 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		87428FF827752384009ED611 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
-		87428FFA277526C8009ED611 /* PixelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelButton.swift; sourceTree = "<group>"; };
+		87428FFA277526C8009ED611 /* Pixel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pixel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 				87428FEA27751E11009ED611 /* iEmojiPainterApp.swift */,
 				87428FEC27751E11009ED611 /* ContentView.swift */,
 				87428FF827752384009ED611 /* GridStack.swift */,
-				87428FFA277526C8009ED611 /* PixelButton.swift */,
+				87428FFA277526C8009ED611 /* Pixel.swift */,
 				87428FEE27751E12009ED611 /* Assets.xcassets */,
 				87428FF027751E12009ED611 /* Preview Content */,
 			);
@@ -145,7 +145,7 @@
 			files = (
 				87428FED27751E11009ED611 /* ContentView.swift in Sources */,
 				87428FEB27751E11009ED611 /* iEmojiPainterApp.swift in Sources */,
-				87428FFB277526C8009ED611 /* PixelButton.swift in Sources */,
+				87428FFB277526C8009ED611 /* Pixel.swift in Sources */,
 				87428FF927752384009ED611 /* GridStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
