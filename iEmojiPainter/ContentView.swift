@@ -8,22 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    private var defaultColor: Color = .white
+
     var body: some View {
         ZStack {
             LinearGradient(colors: [.indigo, .mint], startPoint: .top, endPoint: .bottom)
 
-            VStack {
-                ForEach(0..<13) { row in
-                    HStack() {
-                        ForEach(0..<10) { column in
-                            Button("") {
-                            }
-                            .frame(width: 18, height: 18)
-                            .background(.blue)
-                            .padding(1)
-                        }
-                    }
+            GridStack(rows: 13, columns: 10) { column, row in
+                Button("") {
                 }
+                .frame(width: 18, height: 18)
+                .background(defaultColor)
+                .padding(1)
             }
         }
         .ignoresSafeArea()
