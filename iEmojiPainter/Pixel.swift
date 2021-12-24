@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Pixel: View {
+    let width: CGFloat
+    let height: CGFloat
     let defaultColor: Color = .white
     @State private var currentColor: Color = .blue
     @State var isPainted: Bool = false
@@ -16,7 +18,7 @@ struct Pixel: View {
         Rectangle()
         .background()
         .foregroundColor(isPainted ? self.currentColor : self.defaultColor)
-        .frame(width: 20, height: 20)
+        .frame(width: width, height: height)
         .onTapGesture {
             self.isPainted = !self.isPainted
         }

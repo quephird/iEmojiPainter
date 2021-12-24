@@ -14,8 +14,8 @@ struct ContentView: View {
         ZStack {
             LinearGradient(colors: [.indigo, .mint], startPoint: .top, endPoint: .bottom)
 
-            GridStack(rows: 13, columns: 10) { column, row in
-                Pixel()
+            GridStack(rows: 13, columns: 10, spacing: 2) { column, row in
+                Pixel(width: 25, height: 25)
             }
         }
         .ignoresSafeArea()
