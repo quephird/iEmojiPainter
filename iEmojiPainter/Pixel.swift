@@ -11,7 +11,8 @@ struct Pixel: View {
     let width: CGFloat
     let height: CGFloat
     let defaultColor: Color = .white
-    @State private var currentColor: Color = .blue
+    @Binding var currentColor: Color
+    @Binding var selectedColor: Color
     @State var isPainted: Bool = false
 
     var body: some View {
@@ -20,7 +21,8 @@ struct Pixel: View {
         .foregroundColor(isPainted ? self.currentColor : self.defaultColor)
         .frame(width: width, height: height)
         .onTapGesture {
-            self.isPainted = !self.isPainted
+            self.isPainted.toggle()
+            self.currentColor = self.isPainted ? self.selectedColor : self.defaultColor
         }
     }
 }
