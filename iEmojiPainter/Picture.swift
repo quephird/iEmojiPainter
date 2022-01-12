@@ -13,4 +13,8 @@ class Picture: ObservableObject {
     init(columns: Int, rows: Int, defaultColor: Color) {
         self.pixels = Array(repeating: defaultColor, count: rows*columns)
     }
+
+    func clearPixels() {
+        self.pixels = Array(repeating: .white, count: pixels.count)
+    }
 }
