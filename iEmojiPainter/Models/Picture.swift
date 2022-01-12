@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//tracks the colors on the painter
 class Picture: ObservableObject {
     @Published var pixels: [Color]
 
