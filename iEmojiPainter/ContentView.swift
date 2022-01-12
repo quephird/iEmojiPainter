@@ -43,18 +43,26 @@ struct ContentView: View {
                     }
                 }
 
-                Button("Copy to clipboard") {
-                    var tweet = ""
-                    for row in 0..<13 {
-                        for column in 0..<10 {
-                            tweet.append(picture.pixels[row*10+column].toEmoji())
+                HStack {
+                    Button("Copy to clipboard") {
+                        var tweet = ""
+                        for row in 0..<13 {
+                            for column in 0..<10 {
+                                tweet.append(picture.pixels[row*10+column].toEmoji())
+                            }
+                            tweet.append("\n")
                         }
-                        tweet.append("\n")
+                        UIPasteboard.general.string = tweet
                     }
-                    UIPasteboard.general.string = tweet
+                    .frame(height: 25)
+                    .background(.white)
+
+                    Button("Clear canvas") {
+                        picture.clearPixels()
+                    }
+                    .frame(height: 25)
+                    .background(.white)
                 }
-                .frame(width: 200, height: 25)
-                .background(.white)
             }
         }
         .ignoresSafeArea()
