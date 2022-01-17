@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//used to form each square on the Emoji painter
 struct Pixel: View {
     let width: CGFloat
     let height: CGFloat

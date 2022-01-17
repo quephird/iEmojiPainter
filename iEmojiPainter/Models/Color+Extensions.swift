@@ -1,5 +1,5 @@
 //
-//  Color.swift
+//  Color+Extensions.swift
 //  iEmojiPainter
 //
 //  Created by Danielle Kefford on 12/30/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Color {
-    func toEmoji() -> String {
+    var toEmoji: String {
         switch self {
         case .red:
             return "🟥"
